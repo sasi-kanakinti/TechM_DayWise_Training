@@ -32,9 +32,6 @@ public class Book {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getTitlel() {
-		return titlel;
-	}
 	public void setTitlel(String titlel) {
 		this.titlel = titlel;
 	}
@@ -44,7 +41,8 @@ public class Book {
 	public void setAuthor(Author author) {
 		this.author = author;
 	}
-	
-	
+	public String getTitlel() {
+		return titlel;
+	}
 	
 }
