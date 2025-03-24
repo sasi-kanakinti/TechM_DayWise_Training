@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        html{
+            color-scheme: light dark;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .title{
+                font-size: 4rem;
+                font-weight: bold;
+                background-image: url("https://4kwallpapers.com/images/walls/thumbs_2t/4969.jpg");
+                background-size: contain;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                filter: drop-shadow(15px 15px 5px white);
+        }
+
+
+        @media screen and (max-width: 600px){
+           .title{
+                font-size: 3rem;
+            }
+
+            .container{
+             border-radius: 360px;
+             color: red;
+            }
+        }
+
+        
+
+        .container{
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(rgb(81, 81, 237), rgb(68, 169, 241));
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: 900;
+        }
+        .container:hover{
+            background: linear-gradient(45deg, blue,pink);
+            border-radius: 20px 30px 80px 120px;
+            box-shadow: 0 0 10px pink, 0 0 25px orange,0 0 50px blue;
+        }
+    </style>
+     <div class="title">Avengers</div>
+    <div class="container">
+        container
+    </div>
+    <div class="container2">
+        container2
+    </div>
+</body>
+</html>

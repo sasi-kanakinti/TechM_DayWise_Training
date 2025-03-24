@@ -1,0 +1,59 @@
+
+
+// Create a maven - skipping archetype:
+ 
+// pom.xml -> jpa ,hibernate core, MySQL
+ 
+// Maven ->Update Project
+ 
+// Entity Classes -.Author and Book  one to many
+ 
+//   Configure the MySQL and hibernate properties in persistence.xml
+ 
+//   persistence.xml file - > src/main/resources->META_INF folder->persistence.xml
+ 
+ 
+// Establish Connection ->JPAUtil class-> EntityManagerFactory.-> Connection Obj
+ 
+// EntityManager -> Statement
+ 
+// Main-> get the entitymanager obj from JPAUtil.
+ 
+//     Begin the Transaction
+ 
+//    create the objects
+ 
+//    persist the data
+ 
+//   commit
+ 
+// begin -> execute the data you wanted to send and then commit
+ 
+// close the entity manager
+ 
+// close emf;
+ 
+//Now write the Main.java file
+
+package book;
+
+import java.util.ArrayList;
+import java.util.*;
+import jakarta.persistence.*;
+
+public class Main {
+	public static void main(String[] args) {
+		EntityManager em = JPAUtil.getEntityManager();
+		EntityTransaction tx = em.getTransaction();
+		tx.begin();
+		Author author = new Author("Herbert Schildt", "", null);
+		List<Book> books = new ArrayList<>();
+		books.add(new Book("Java: A Beginner's Guide, Sixth Edition", "0071809252", "McGraw-Hill Education", "June 7, 2014", "English", 728));
+		books.add(new Book("Java: The Complete Reference, Ninth Edition", "0071808558", "McGraw-Hill Education", "June 7, 2014", "English", 1312));
+		author.setBooks(books);
+		em.persist(author);
+		tx.commit();
+		em.close();
+		JPAUtil.shutdown();
+	}
+}

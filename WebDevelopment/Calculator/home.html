@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(22, 210, 194);
+        }
+        input[type="text"] {
+            width: 15em;
+            height: 3em;
+            border: 2px solid rgba(0,0,0,0.5); 
+            border-radius: 7px;
+            background-color: transparent;
+            align-self: center;
+            color: black;
+            font-size: 16px;
+        }
+        h4 {
+            align-self: center;
+        }
+        button {
+            border-radius: 7px;
+            width: 6rem;
+            height: 3em;
+            color: rgb(120, 16, 89);
+            background-color: rgb(80, 216, 144);
+            align-self: center;
+        }
+        button:hover {
+            background: linear-gradient(45deg, blue, pink);
+            box-shadow: 0 0 10px pink, 0 0 25px orange, 0 0 50px blue; 
+        }
+        .result {
+            align-self: center;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+    <h4>Enter 1st element</h4><input type="text" id="a"><br><br>
+    <h4>Enter 2nd element</h4><input type="text" id="b"><br><br><br>
+    <button type="button" onclick="calculate()" id="btn">Submit</button>
+
+    <div id="result" class="result"></div>
+</body>
+</html>

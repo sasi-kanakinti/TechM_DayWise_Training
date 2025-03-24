@@ -1,0 +1,24 @@
+package book;
+
+import java.util.ArrayList;
+import java.util.*;
+import jakarta.persistence.*;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		EntityManager em = JPAUtil.getEntityManager();
+		EntityTransaction tx = em.getTransaction();
+		tx.begin();
+		Author author = new Author("Herbert Schildt", "", null);
+		List<Book> books = new ArrayList<>();
+		books.add(new Book("Java: A Beginner's Guide, Sixth Edition", "0071809252", "McGraw-Hill Education", "June 7, 2014", "English", 728));
+		books.add(new Book("Java: The Complete Reference, Ninth Edition", "0071808558", "McGraw-Hill Education", "June 7, 2014", "English", 1312));
+		author.setBooks(books);
+		em.persist(author);
+		tx.commit();
+		em.close();
+		sc.close();
+		JPAUtil.shutdown();
+	}
+}

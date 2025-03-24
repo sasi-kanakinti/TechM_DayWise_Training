@@ -1,0 +1,20 @@
+package relvdemo;
+
+import jakarta.persistence.EntityManager;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		EntityManager em=JPAUtil.getEntityManager();
+		em.getTransaction().begin();
+		
+		Author a1=new Author("A1");
+		Author a2=new Author("A2")
+		
+		Book b1=new Book("B1",a1);
+		Book b2=new Book("B2",a2);
+		
+	}
+
+}

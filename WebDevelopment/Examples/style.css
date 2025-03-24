@@ -1,0 +1,39 @@
+
+html{
+    color-scheme: light dark;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    width: 300px;
+    height: 300px;
+    padding: 100px;
+    border: 1px solid black;
+    background: black;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);  
+    place-items: center; 
+}
+
+.item{
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(90deg, #2c8aed, #f83959);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.id1{
+    background-color: #2c8aed;
+}
