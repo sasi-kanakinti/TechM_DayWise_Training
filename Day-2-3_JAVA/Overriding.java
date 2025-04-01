@@ -14,7 +14,7 @@ public class Overriding {
     public static void main(String[] args) {
         Employee emp = new Employee();
         Manager mgr = new Manager();
-        System.out.println(emp.calculateSalary()); // Base salary: 50000
-        System.out.println(mgr.calculateSalary()); // Base salary: 50000 + Bonus: 10000
+        System.out.println(emp.calculateSalary()); 
+        System.out.println(mgr.calculateSalary()); 
     }
 }
