@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.HttpConstraintElement"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="models.Goods"/>
+    <fullyQualifiedTypeName name="org.hibernate.internal.build.AllowSysOut"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EntityManagerFactory"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Persistence"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="Admin.Book"/>
+</qualifiedTypeNameHistroy>

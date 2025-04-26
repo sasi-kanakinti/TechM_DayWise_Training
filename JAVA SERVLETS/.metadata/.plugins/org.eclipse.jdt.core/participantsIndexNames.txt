@@ -1,0 +1,15 @@
+INDEX VERSION 1.134
+C:\Users\99081\OneDrive\Desktop\JAVA SERVLETS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4219379779.index
+\JSPDEMO\src\main\java
+C:\Users\99081\OneDrive\Desktop\JAVA SERVLETS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3462144560.index
+\JSPDEMO\src\main\java
+C:\Users\99081\OneDrive\Desktop\JAVA SERVLETS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2701550808.index
+\InventorySystem\src\main\java
+C:\Users\99081\OneDrive\Desktop\JAVA SERVLETS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3446515715.index
+\StudentDetails\src\main\java
+C:\Users\99081\OneDrive\Desktop\JAVA SERVLETS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3876936755.index
+\Demo1\src\main\java
+C:\Users\99081\OneDrive\Desktop\JAVA SERVLETS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\747015861.index
+\STUMS\src\main\java
+C:\Users\99081\OneDrive\Desktop\JAVA SERVLETS\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1391763080.index
+\Demo1\src\main\java
