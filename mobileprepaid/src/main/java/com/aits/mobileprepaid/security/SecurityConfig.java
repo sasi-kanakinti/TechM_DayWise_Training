@@ -18,12 +18,12 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
     	 http
-         .csrf(csrf -> csrf.disable()).sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)) // 🔹 Stateless session
+         .csrf(csrf -> csrf.disable()).sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
          .authorizeHttpRequests(auth -> auth
             .requestMatchers("/auth/**").permitAll()
             .requestMatchers("/admin/**").hasRole("ADMIN")
             .requestMatchers("/recharge/**", "/plans/**").hasAnyRole("USER", "ADMIN")
-            .anyRequest().authenticated() // All other endpoints require authentication
+            .anyRequest().authenticated()
                  ).
             addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();

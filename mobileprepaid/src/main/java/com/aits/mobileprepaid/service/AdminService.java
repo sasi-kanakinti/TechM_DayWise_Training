@@ -30,29 +30,20 @@ public class AdminService {
 		 
 		 List<User> usersExpiring=new ArrayList<>();
 		 
-		 //filter the details of the users whose recharge is expiring in the next 3 days
-		 
 		
 		 for(User u:users) {
 			 
 			 List<RechargeHistory> recharges= rechargehistoryrepository.findByUserId(u.getId());
 				 
-			//u1->recharges 
-			 //recharges->[29/03/2023,29/06/2023,.......29/02/2025]
 				
 			 if(!recharges.isEmpty()) {
 				 
-				 //get the last rechargedateObject from the list of recharges
-				 
+				 				 
 			 RechargeHistory thatmightexpire=recharges.get(recharges.size()-1);
 			 
 			 LocalDateTime paymentdate=thatmightexpire.getRechargeDate();
 			 
 			 	LocalDateTime expirydate=paymentdate.plusDays(thatmightexpire.getPlan().getValidityInDays());
-			 
-		  //I got the expirydate of the rechargehistory
-			 	
-			//I have to check whether the expiry date is within the range of today and next 3 days
 			 
 			 	
 			 	LocalDateTime todaysdate=LocalDateTime.now();

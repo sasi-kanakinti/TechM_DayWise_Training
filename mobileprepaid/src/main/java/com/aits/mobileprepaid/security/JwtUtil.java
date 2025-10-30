@@ -19,12 +19,12 @@ public class JwtUtil {
         return Jwts.builder()
             .subject(username)
             .issuedAt(new Date())
-            .expiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60)) // 1 hour expiry
+            .expiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60))
             .signWith(SECRET_KEY)
             .compact();
     }
 
-    // 🔹 Validate JWT Token
+ 
     public boolean validateToken(String token) {
         try {
             Jwts.parser()
@@ -37,7 +37,7 @@ public class JwtUtil {
         }
     }
 
-    // 🔹 Extract Username from Token
+
     public String extractUsername(String token) {
         Claims claims = Jwts.parser()
             .verifyWith(SECRET_KEY)

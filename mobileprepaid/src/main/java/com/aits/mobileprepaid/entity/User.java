@@ -2,6 +2,8 @@ package com.aits.mobileprepaid.entity;
 
 import java.util.List;
 
+import org.springframework.lang.NonNull;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -29,6 +31,7 @@ public class User {
     private String email;
     private String password;
     
+    @NonNull
     @Enumerated(EnumType.STRING)
    private Role role;
     

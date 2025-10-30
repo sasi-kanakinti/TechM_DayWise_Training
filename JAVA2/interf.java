@@ -6,7 +6,7 @@ interface B {
     void show();
 }
  
-class C implements A, B { // ✅ No conflict, C must override show()
+class C implements A, B {
     public void show() {
         System.out.println("Class C resolves the conflict.");
     }

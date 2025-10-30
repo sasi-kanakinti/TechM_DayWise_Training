@@ -18,6 +18,7 @@ public class RechargePlan {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
+	
 	private String name;
 	private String category;
 	private double price;

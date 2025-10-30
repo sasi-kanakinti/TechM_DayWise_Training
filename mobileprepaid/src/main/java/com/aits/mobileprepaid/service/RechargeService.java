@@ -36,14 +36,9 @@ public class RechargeService {
 	            return "User or Plan not found.";
 	        }
 	        
-	        //if the pland and user exists he has to go for payment..
-	        
-	        //after payment I have to update the recharge history of the user object.
 	        
 	        RechargeHistory history = new RechargeHistory();
-	        //empty
 	        
-	        //set all the paramaters of rechargehistory and store it as a new row in recharge_history table
 	        history.setUser(userOpt.get());
 	        history.setPlan(planOpt.get());
 	        history.setPaymentMethod(paymentMethod);

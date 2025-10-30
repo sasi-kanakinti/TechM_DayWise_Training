@@ -4,8 +4,12 @@ import lombok.Data;
 
 @Data
 public class PaymentDetails {
-    private String method;
-    private String upiId;
-    private String cardNumber;
-    private String bankAccount;
+    @SuppressWarnings("unused")
+	private String method;
+    @SuppressWarnings("unused")
+	private String upiId;
+    @SuppressWarnings("unused")
+	private String cardNumber;
+    @SuppressWarnings("unused")
+	private String bankAccount;
 }
